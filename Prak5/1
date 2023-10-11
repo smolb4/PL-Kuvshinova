@@ -1,5 +1,5 @@
 k=0
-s ='45.6.567.90'
+s = input()
 while ('.' in s):
     s=s.replace ('.','',1)
     k+=1
