@@ -1,0 +1,15 @@
+print ('Вариант 3')
+
+print ('Задание 1')
+import math
+a=int(input('Укажите значение: '))
+b=int(input('Укажите значение: '))
+def pr_treug (a,b):
+    return math.sqrt(a**2+b**2)
+print (pr_treug(a,b))
+
+print ('Задание 2')
+w=input('Напишите слово: ')
+b = sorted(w)
+c = ''.join(b)
+print(c)
