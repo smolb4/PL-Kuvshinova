@@ -25,53 +25,52 @@ print(k, s)
 #находящихся над главной диагональю.
 
 print ('Задание 2')
-
+from random import randint
 a=[]
 n=3
 m=4
 for i in range(n):
     b=[]
     for j in range(m):
-        b.append(int(input('Введите элементы матрицы: ')))
+        b.append(randint(1,100))
     a.append(b)
 for i in a:
     print(i)
 
-maximum=a[0][0]
-minimum=a[0][-1]
+maximum1=a[0][0]
+minimum1=a[0][-1]
 for i in range(n):
     for j in range(m):
-        if maximum<a[0][j]:
-
-            maximum=a[0][j]
+        if maximum1<a[0][j]:
+            maximum1=a[0][j]
             a[0][0], a[0][j] = a[0][j], a[0][0]
 
-        if minimum>a[0][j]:
-            minimum=a[0][j]
-            a[0][-1], a[0][j] = a[0][j], a[0][-1]
+        if minimum1>a[0][j]:
+            minimum1=a[0][j]
+            a[0][j], a[0][-1] = a[0][-1], a[0][j]
 
-maximum=a[1][0]
-minimum=a[1][-1]
+maximum2=a[1][0]
+minimum2=a[1][-1]
 for i in range(n):
     for j in range(m):
-        if maximum<a[1][j]:
-            maximum=a[1][j]
+        if maximum2<a[1][j]:
+            maximum2=a[1][j]
             a[1][0], a[1][j] = a[1][j], a[1][0]
-        if minimum>a[1][j]:
-            minimum=a[1][j]
-            a[1][-1], a[1][j] = a[1][j], a[1][-1]
+        if minimum2>a[1][j]:
+            minimum2=a[1][j]
+            a[1][j], a[1][-1] = a[1][-1], a[1][j]
 
 
-maximum=a[2][0]
-minimum=a[2][-1]
+maximum3=a[2][0]
+minimum3=a[2][-1]
 for i in range(n):
     for j in range(m):
-        if maximum<a[2][j]:
-            maximum=a[2][j]
+        if maximum3<a[2][j]:
+            maximum3=a[2][j]
             a[2][0], a[2][j] = a[2][j], a[2][0]
-        if minimum>a[2][j]:
-            minimum=a[2][j]
-            a[2][-1], a[2][j] = a[2][j], a[2][-1]
+        if minimum3>a[2][j]:
+            minimum3=a[2][j]
+            a[2][j], a[2][-1] = a[2][-1], a[2][j]
 
 print('Измененный массив:')
 for i in range(n):
