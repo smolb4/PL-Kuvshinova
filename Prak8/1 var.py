@@ -5,7 +5,7 @@ a=[]
 n=int(input('Введите размер квадрата: '))
 for i in range(n):
     b=[]
-    for i in range(n):
+    for j in range(n):
         b.append(int(input('Введите элементы матрицы: ')))
     a.append(b)
 for i in a:
