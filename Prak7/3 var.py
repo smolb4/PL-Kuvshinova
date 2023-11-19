@@ -2,11 +2,16 @@ print ('Вариант 3')
 
 print ('Задание 1')
 import math
-a=int(input('Укажите значение: '))
-b=int(input('Укажите значение: '))
+a1=int(input('Первый треуг. 1-ый катет: '))
+b1=int(input('Первый треуг. 2-ый катет: '))
+a2=int(input('Второй треуг. 1-ый катет: '))
+b2=int(input('Второй треуг. 2-ый катет: '))
 def pr_treug (a,b):
     return math.sqrt(a**2+b**2)
-print (pr_treug(a,b))
+if pr_treug(a1,b1)>pr_treug(a2,b2):
+    print ('Гипотенуза первого треуг. больше, чем второго')
+else:
+    print('Гипотенуза второго треуг. больше, чем первого')
 
 print ('Задание 2')
 w=input('Напишите слово: ')
