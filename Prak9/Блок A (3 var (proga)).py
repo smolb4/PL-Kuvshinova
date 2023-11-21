@@ -2,12 +2,12 @@ print ('Задание 3')
 
 print ('Блок А')
 
-def rev(lst):
-    if lst:
-        return rev(lst[1:])+[lst[0]]
+def obratka (x):
+    if x:
+        return obratka(x[1:])+[x[0]]
     else:
         return []
-l = list(input('Введите цифру: '))
-print(''.join(l))
+o = obratka(list(input('Введите цифру: ')))
+print(''.join(o))
 
 #3. Вывести число в обратном порядке
