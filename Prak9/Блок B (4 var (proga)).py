@@ -12,7 +12,7 @@ def pomogite(x, d=0):
             pomogite(x, d-1)
     else:
         return print('YES')
-    pass
+    
 n = int(input('Введите число (>1): '))
 pomogite(n)
 
