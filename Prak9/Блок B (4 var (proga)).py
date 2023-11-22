@@ -9,7 +9,7 @@ def pomogite(x, d=0):
         if x%d==0:
             return print('NO')
         else:
-             return pomogite(x, d-1)
+            pomogite(x, d-1)
     else:
         return print('YES')
     pass
