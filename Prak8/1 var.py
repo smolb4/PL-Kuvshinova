@@ -27,8 +27,8 @@ print(k, s)
 print ('Задание 2')
 from random import randint
 a=[]
-n=3
-m=4
+n=3        #строчки
+m=4        #столбцы
 for i in range(n):
     b=[]
     for j in range(m):
@@ -37,47 +37,47 @@ for i in range(n):
 for i in a:
     print(i)
 
-maximum1=a[0][0]
-minimum1=a[0][-1]
+max1=a[0][0]
+min1=a[0][-1]
 for i in range(n):
     for j in range(m):
-        if maximum1<a[0][j]:
-            maximum1=a[0][j]
-            a[0][0], a[0][j] = a[0][j], a[0][0]
+        if max1<a[0][j]:
+            max1=a[0][j]
+            a[0][0],a[0][j] = a[0][j],a[0][0]   # обмен 2-ух переменных через временный кортеж
 
-        if minimum1>a[0][j]:
-            minimum1=a[0][j]
-            a[0][j], a[0][-1] = a[0][-1], a[0][j]
+        if min1>a[0][j]:
+            min1=a[0][j]
+            a[0][j],a[0][-1] = a[0][-1],a[0][j]
 
-maximum2=a[1][0]
-minimum2=a[1][-1]
+max2=a[1][0]
+min2=a[1][-1]
 for i in range(n):
     for j in range(m):
-        if maximum2<a[1][j]:
-            maximum2=a[1][j]
-            a[1][0], a[1][j] = a[1][j], a[1][0]
-        if minimum2>a[1][j]:
-            minimum2=a[1][j]
-            a[1][j], a[1][-1] = a[1][-1], a[1][j]
+        if max2<a[1][j]:
+            max2=a[1][j]
+            a[1][0],a[1][j] = a[1][j],a[1][0]
+        if min2>a[1][j]:
+            min2=a[1][j]
+            a[1][j],a[1][-1] = a[1][-1],a[1][j]
 
 
-maximum3=a[2][0]
-minimum3=a[2][-1]
+max3=a[2][0]
+min3=a[2][-1]
 for i in range(n):
     for j in range(m):
-        if maximum3<a[2][j]:
-            maximum3=a[2][j]
-            a[2][0], a[2][j] = a[2][j], a[2][0]
-        if minimum3>a[2][j]:
-            minimum3=a[2][j]
-            a[2][j], a[2][-1] = a[2][-1], a[2][j]
+        if max3<a[2][j]:
+            max3=a[2][j]
+            a[2][0],a[2][j] = a[2][j],a[2][0]
+        if min3>a[2][j]:
+            min3=a[2][j]
+            a[2][j],a[2][-1] = a[2][-1],a[2][j]
 
 print('Измененный массив:')
 for i in range(n):
     for j in range(m):
         print(a[i][j], end=' ')
     print()
-
+    
 #2. Дана матрица B[N, М]. Найти в каждой строке матрицы
 #максимальный и минимальный элементы и поменять их с первым и
 #последним элементами строки соответственно.
