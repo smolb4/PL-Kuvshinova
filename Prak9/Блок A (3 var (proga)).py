@@ -1,13 +1,14 @@
-print ('Задание 3')
-
 print ('Блок А')
+print ('Задание 1')
 
-def obratka (x):
-    if x:
-        return obratka(x[1:])+[x[0]]
-    else:
-        return []
-o = obratka(list(input('Введите цифру: ')))
-print(''.join(o))
+import math
+def vid(a,b):
+    return (a**b)/math.factorial(b)
 
-#3. Вывести число в обратном порядке
+
+x = int(input())
+n = int(input())
+
+print(vid(x,n))
+#1.Даны натуральные числа Х, N.
+#Вычислить выражение вида: x ^ n / n!.
