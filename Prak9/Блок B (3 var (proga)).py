@@ -6,7 +6,7 @@ def posl():
     a = int(input('Введите кол-во элементов последовательности: '))
     for i in range(a):
         b=int(input('Введите элементы: '))
-        if i%2==0:
+        if i%2==1:
             print(b)
         else:
             pass
