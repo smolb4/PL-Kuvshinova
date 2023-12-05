@@ -39,7 +39,7 @@ for i in a:
 
 
 max1=0
-min1=100
+min1=1
 for i in a:
     min1=i.index(min(i))
     max1=i.index(max(i))
