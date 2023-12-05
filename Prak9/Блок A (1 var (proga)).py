@@ -6,7 +6,7 @@ def f (a):
     else:
         return a*f(a-1)
 x = int(input('x: '))
-n = int(input('n :'))
+n = int(input('n: '))
 b = (x**n)/f(n)
 print('Ответ: ', b)
 
