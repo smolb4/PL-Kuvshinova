@@ -1,14 +1,14 @@
 print ('Блок А')
 print ('Задание 1')
+def f (a):
+    if a==1:
+        return 1
+    else:
+        return a*f(a-1)
+x = int(input('x: '))
+n = int(input('n :'))
+b = (x**n)/f(n)
+print('Ответ: ', b)
 
-import math
-def vid(a,b):
-    return (a**b)/math.factorial(b)
-
-
-x = int(input())
-n = int(input())
-
-print(vid(x,n))
 #1.Даны натуральные числа Х, N.
 #Вычислить выражение вида: x ^ n / n!.
