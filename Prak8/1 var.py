@@ -27,8 +27,8 @@ print(k, s)
 print ('Задание 2')
 from random import randint
 a=[]
-n=3        #строчки
-m=4        #столбцы
+n=int(input('Строчки: ')) #строчки
+m=int(input('Столбцы: ')) #столбцы
 for i in range(n):
     b=[]
     for j in range(m):
@@ -37,47 +37,19 @@ for i in range(n):
 for i in a:
     print(i)
 
-max1=a[0][0]
-min1=a[0][-1]
-for i in range(n):
-    for j in range(m):
-        if max1<a[0][j]:
-            max1=a[0][j]
-            a[0][0],a[0][j] = a[0][j],a[0][0]   # обмен 2-ух переменных через временный кортеж
 
-        if min1>a[0][j]:
-            min1=a[0][j]
-            a[0][j],a[0][-1] = a[0][-1],a[0][j]
-
-max2=a[1][0]
-min2=a[1][-1]
-for i in range(n):
-    for j in range(m):
-        if max2<a[1][j]:
-            max2=a[1][j]
-            a[1][0],a[1][j] = a[1][j],a[1][0]
-        if min2>a[1][j]:
-            min2=a[1][j]
-            a[1][j],a[1][-1] = a[1][-1],a[1][j]
-
-
-max3=a[2][0]
-min3=a[2][-1]
-for i in range(n):
-    for j in range(m):
-        if max3<a[2][j]:
-            max3=a[2][j]
-            a[2][0],a[2][j] = a[2][j],a[2][0]
-        if min3>a[2][j]:
-            min3=a[2][j]
-            a[2][j],a[2][-1] = a[2][-1],a[2][j]
+max1=0
+min1=100
+for i in a:
+    min1=i.index(min(i))
+    max1=i.index(max(i))
+    i[max1],i[0]=i[0],i[max1]
+    i[min1],i[-1]=i[-1],i[min1] # обмен 2-ух переменных через временный кортеж
 
 print('Измененный массив:')
-for i in range(n):
-    for j in range(m):
-        print(a[i][j], end=' ')
-    print()
-    
+for i in a:
+    print(i)
+
 #2. Дана матрица B[N, М]. Найти в каждой строке матрицы
 #максимальный и минимальный элементы и поменять их с первым и
 #последним элементами строки соответственно.
