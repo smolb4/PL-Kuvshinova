@@ -14,6 +14,13 @@ for i in a:
     f.write('\n')
 
 f.close()
+f = open('Kuvshinova_Anastasia_Alekseevna_UB-31_vvod.txt', 'r')
+b=[]
+for i in range(n):
+    c=[]
+    for j in range(m):
+        b.append(randint(1,100))
+    b.append(c)
 
 max1=0
 min1=1
