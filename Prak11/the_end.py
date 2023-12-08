@@ -46,13 +46,13 @@ tab_control.pack(fill="both", expand=True)
 
 def proverka():
     if (p1_value.get())==True and (v2_value.get())!=True and (t3_value.get())!=True:
-        messagebox.showinfo('Сектор приз на барабане', 'Был выбран только первый вариант.\n\nВладимир Владимирович,\nпоставьте 85, пожалуйста')
+        messagebox.showinfo('Сектор приз на барабане', 'Был выбран только первый вариант.\n\nВладимир Владимирович,\nя буду ходить к вам, пока у меня не будет 85')
     elif (v2_value.get())==True and (p1_value.get())!=True and (t3_value.get())!=True:
         messagebox.showinfo('Калинки-малинки','Был выбран только второй вариант.\n\nВладимир Владимирович,\nдавайте! С барского \nплеча! Как умеете!!!')
     elif (t3_value.get())==True and (v2_value.get())!=True and (p1_value.get())!=True:
-        messagebox.showinfo('Hande Hoh!','Был выбран только третий вариант.\n\nВладимир Владимирович,\nруки вверх! Вы попались.\nЧтобы освободиться, нужно поставить зачет!')
+        messagebox.showinfo('Ты знаешь, так хочется жить...','Был выбран только третий вариант.\n\nВладимир Владимирович,\nя не хочу на экзамен')
     elif (p1_value.get())==True and (v2_value.get())==True and (t3_value.get())!=True:
-        messagebox.showinfo('Сектор приз на барабане', 'Были выбраны первый и второй варианты.\n\nВладимир Владимирович,\nпоставьте 100, пожалуйста')
+        messagebox.showinfo('Сектор приз на барабане', 'Были выбраны первый и второй варианты.\n\nВладимир Владимирович,\nя буду ходить к вам, пока у меня не будет 85')
     elif (p1_value.get())==True and (v2_value.get())!=True and (t3_value.get())==True:
         messagebox.showinfo('Сектор приз на барабане', 'Были выбраны первый и третий варианты.\n\nВладимир Владимирович,\nну я реально стараюсь')
     elif (p1_value.get())!=True and (v2_value.get())==True and (t3_value.get())==True:
