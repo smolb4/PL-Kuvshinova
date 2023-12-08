@@ -16,7 +16,7 @@ txt.pack()
 
 def jjson():
     username = txt.get()
-    url = f'https://api.github.com/apache/{username}'
+    url = f'https://api.github.com/users/{username}'
     user_data = requests.get(url).json()
     data = {}
     kkey = ['company',
