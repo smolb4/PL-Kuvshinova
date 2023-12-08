@@ -4,7 +4,6 @@ from tkinter import Checkbutton
 ####
 import requests
 import json
-from pprint import pprint
 
 window = Tk()
 window.title('Кувшинова Анастасия Алексеевна')
@@ -19,7 +18,6 @@ def jjson():
     username = txt.get()
     url = f'https://api.github.com/users/{username}'
     user_data = requests.get(url).json()
-    pprint(user_data)
     data = {}
     kkey = ['company',
             'created_at',
