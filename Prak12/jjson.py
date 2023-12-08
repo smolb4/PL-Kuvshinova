@@ -19,12 +19,18 @@ def jjson():
     username = txt.get()
     url = f'https://api.github.com/users/{username}'
     user_data = requests.get(url).json()
+    pprint(user_data)
     data = {}
-    kkey = ['company', 'created_at', 'email', 'id', 'name', 'url']
+    kkey = ['company',
+            'created_at',
+            'email',
+            'id',
+            'name',
+            'url']
     for i in kkey:
         data[i] = user_data[i]
     with open('Kuvshinova_Anastasia_Alekseevna_UB-31_jjson.json', 'w') as repoz:
-        json.dump(data, repoz)
+        json.dump(data, repoz, indent=4)
     print('Данные о репозитории получены и записаны в файл!')
 
 Button(window, text='Получить результат', command=jjson).pack()
