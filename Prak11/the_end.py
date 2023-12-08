@@ -84,9 +84,11 @@ text = Text(tab3, height=12)
 text.pack()
 
 def open():
-    filetypes = (('text files', '*.txt'),('All files', '*.*'))
-    f = fd.askopenfile(filetypes=filetypes)
-    text.insert(1.0, f.readlines())
+    filetypes1 = (('text files', '*.txt'),('All files', '*.*'))
+    f = fd.askopenfile(filetypes=filetypes1)
+    f1 = codecs.open(f, encoding='utf-8')
+    f2 = f1.read()
+    text.insert('1.0', f2)
 
 Button(tab3, text='Загрузить...', command=open).pack()
 
