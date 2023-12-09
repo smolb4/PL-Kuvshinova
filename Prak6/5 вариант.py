@@ -1,6 +1,6 @@
 from random import randint
 
-print('Вариант 4')
+print('Вариант 5')
 print('Задание 1')
 n = 10
 d = []
