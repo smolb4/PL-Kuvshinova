@@ -2,7 +2,7 @@ from random import randint
 
 print('Вариант 7')
 print('Задание 1')
-n = 10
+n = int(input('Кол-во элементов в массиве: '))
 d = []
 for i in range(n):
     d.append(randint(1, 10))
@@ -20,7 +20,7 @@ print(summa, proiz)
 #произведение.
 
 print('Задание 2')
-m1 = 10
+m1 = int(input('Кол-во элементов в массиве: '))
 n = []
 for i in range(m1):
     n.append(randint(1, 10))
